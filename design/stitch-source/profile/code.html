@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Profile</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary-theme": "#3DB88B",
+            "bg-custom": "#fcf9f8",
+            "border-custom": "#ece7e5",
+            "tab-inactive": "#bbf0dc"
+          },
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    * {
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+</head>
+<body class="bg-[#f0f2f5] flex justify-center items-center min-h-screen m-0 p-0 font-sans">
+<!-- Mobile Viewport: 390 x 844 px -->
+<div class="w-[390px] h-[844px] bg-[#fcf9f8] flex flex-col relative overflow-hidden shadow-[0_10px_25px_rgba(0,0,0,0.08)]">
+<!-- Top Green Bar: Full-width green header (#3DB88B) with white centered text "Profile" (bold, 18px) -->
+<header class="bg-[#3DB88B] h-[64px] w-full flex items-center justify-center px-6 flex-shrink-0">
+<h1 class="text-white text-[18px] font-bold tracking-[-0.01em]">Profile</h1>
+</header>
+<!-- Main Content Area: 24px side padding, 16px vertical rhythm -->
+<main class="flex-1 px-6 py-4 flex flex-col justify-between overflow-y-auto pb-20">
+<div>
+<!-- Profile Avatar: 80px circle centered below top bar with green background (#3DB88B) and white bold initials "HT" -->
+<div class="flex justify-center items-center my-4">
+<div class="w-[80px] h-[80px] rounded-full bg-[#3DB88B] flex items-center justify-center text-white text-[26px] font-bold tracking-[0.5px]">
+            HT
+          </div>
+</div>
+<!-- Plain Label-and-Value Rows in an outlined white card with thin grey lines -->
+<div class="bg-white rounded-xl border border-[#ece7e5] overflow-hidden mt-4">
+<div class="flex justify-between items-center px-5 py-[18px] border-b border-[#ece7e5]">
+<span class="text-[14px] text-[#64748b] font-medium">Full Name</span>
+<span class="text-[15px] text-[#1a1a1a] font-semibold text-right">Hamza Tariq</span>
+</div>
+<div class="flex justify-between items-center px-5 py-[18px] border-b border-[#ece7e5]">
+<span class="text-[14px] text-[#64748b] font-medium">Email</span>
+<span class="text-[15px] text-[#1a1a1a] font-semibold text-right">name@example.com</span>
+</div>
+<div class="flex justify-between items-center px-5 py-[18px]">
+<span class="text-[14px] text-[#64748b] font-medium">Role</span>
+<span class="text-[15px] text-[#1a1a1a] font-semibold text-right">Job Seeker</span>
+</div>
+</div>
+</div>
+<!-- Sign Out Button: Full-width green (#3DB88B) button with white text and rounded corners -->
+<div class="my-4">
+<button class="w-full h-[52px] bg-[#3DB88B] hover:bg-[#34a37b] text-white rounded-[10px] text-[16px] font-semibold transition-colors duration-150 flex items-center justify-center" type="button">
+          Sign Out
+        </button>
+</div>
+</main>
+<!-- Bottom Navigation Bar: Fixed at bottom, green (#3DB88B) with 4 tabs, Profile active -->
+<nav class="absolute bottom-0 left-0 right-0 w-full h-[64px] bg-[#3DB88B] shadow-none flex items-center justify-around px-3 z-20 flex-shrink-0">
+  <!-- Home tab -->
+  <a class="flex flex-col items-center justify-center gap-0.5 flex-1 h-full text-[#94e0c4] hover:text-white transition-colors" href="#">
+    <span class="material-symbols-outlined text-[24px]">home</span>
+    <span class="text-[14px] font-medium leading-none">Home</span>
+  </a>
+  <!-- Jobs tab -->
+  <a class="flex flex-col items-center justify-center gap-0.5 flex-1 h-full text-[#94e0c4] hover:text-white transition-colors" href="#">
+    <span class="material-symbols-outlined text-[24px]">work</span>
+    <span class="text-[14px] font-medium leading-none">Jobs</span>
+  </a>
+  <!-- Interview tab -->
+  <a class="flex flex-col items-center justify-center gap-0.5 flex-1 h-full text-[#94e0c4] hover:text-white transition-colors" href="#">
+    <span class="material-symbols-outlined text-[24px]">chat</span>
+    <span class="text-[14px] font-medium leading-none">Interview</span>
+  </a>
+  <!-- Profile tab (Active) -->
+  <a class="flex flex-col items-center justify-center gap-0.5 flex-1 h-full text-white font-bold" href="#">
+    <span class="material-symbols-outlined text-[24px]">person</span>
+    <span class="text-[14px] leading-none">Profile</span>
+  </a>
+</nav>
+</div>
+
+
+</body></html>
